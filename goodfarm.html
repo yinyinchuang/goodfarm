@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goodfarm</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="herosection">
+        <div class="container">
+            <div class="row flex-column justify-content-center align-items-center text-center">
+                <img src="./image/logo.png" alt="">
+                <h4 class="pt-4 font-weight-bold">最新鮮自然的蔬菜箱</h4>
+                <button class="btn-shop btn-shop-web btn mt-3 d-none d-md-block">立即訂購</button>
+                <button class="btn-shop btn-shop-mobile btn mt-3 d-md-none">立即訂購</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutus">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="aboutus-text col-12 col-md-6 text-center">
+                    <h2 class="font-weight-bold">從產地直送餐桌</h2>
+                    <p class="pt-4">依照季節和地形採用輪作方式種植數十種未施農藥化肥的有機蔬果</p>
+                    <p>在出貨日前採收，確保寄出最新鮮、時令的食材</p>
+                    <p>在家就能滿足一週的蔬果營養量</p>
+                </div>
+                <div class="aboutus-img col-12 col-md-6 text-center">
+                    <img src="./image/aboutus.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="howitworks pt-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="howitworks-title col-md-12">
+                    <h2 class="font-weight-bold">購買方式</h2>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="./image/howitworks01.png" alt="">
+                    <h4>選擇尺寸</h4>
+                    <p>依照人數選取適合的尺寸</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="./image/howitworks02.png" alt="">
+                    <h4>新鮮採收</h4>
+                    <p>依照當季食材自動搭配替換菜色，提升豐富度</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="./image/howitworks03.png" alt="">
+                    <h4>免運送費</h4>
+                    <p>下訂後新鮮採收直送，經整理後立即新鮮出貨</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="product pt-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="product-title col-md-12">
+                    <h2 class="font-weight-bold">熱賣組合</h2>
+                </div>
+
+                <div class="product-item col-12 col-md-4">
+                    <img src="./image/product01.jpg" alt="">
+
+                    <div style="display: none;" id="web-view1">
+                        <div class="product-item-view d-flex">
+                            <img src="./image/view01.jpg" alt="">
+                            <div class="product-item-detail">
+                                <h2>兩人蔬菜箱</h2>
+                                <h5 class="pt-2">葉菜類5入/根莖類4入/菇類3入/辛香料1入</h5>
+                                <p class="pt-2"><i class="fas fa-hashtag"></i> 青菜類：青江菜、大陸妹、小白菜、空心菜、高麗菜</p>
+                                <p><i class="fas fa-hashtag"></i> 根莖類：洋蔥、紅蘿蔔、番茄、玉米</p>
+                                <p><i class="fas fa-hashtag"></i> 菇類：金針菇、小木耳、杏鮑菇</p>
+                                <p><i class="fas fa-hashtag"></i> 因皆為每日新鮮採購，若品項有缺貨會選其他當季蔬菜替補</p>
+                                <p><i class="fas fa-dollar-sign"></i> 優惠價：NT$499</p>
+                                <button class="btn-view-cart btn">加入購物車</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quickview d-none d-md-block" id="web-view-btn1">
+                        <a href="#0">快速瀏覽</a>
+                    </div>
+
+                    <div class="product-price pt-3">
+                        <h5>兩人蔬菜箱</h5>
+                        <p>NT$499</p>
+                    </div>
+
+                    <div class="product-btn-cart d-flex justify-content-around">
+                        <button class="btn-mobile-view btn col-5 d-md-none" id="mobile-view-btn1">商品細節</button>
+                        <button class="btn-cart btn col-5 col-md-12">加入購物車</button>
+                    </div>
+
+                    <div style="display: none;" id="view-mobile-1">
+                        <div class="product-item-view d-flex">
+                            <div class="product-item-detail">
+                                <h5 class="pt-2">葉菜類5入/根莖類4入/菇類3入/辛香料1入</h5>
+                                <p class="pt-2"><i class="fas fa-hashtag"></i> 青菜類：青江菜、大陸妹、小白菜、空心菜、高麗菜</p>
+                                <p><i class="fas fa-hashtag"></i> 根莖類：洋蔥、紅蘿蔔、番茄、玉米</p>
+                                <p><i class="fas fa-hashtag"></i> 菇類：金針菇、小木耳、杏鮑菇</p>
+                                <p><i class="fas fa-hashtag"></i> 因皆為每日新鮮採購，若品項有缺貨會選其他當季蔬菜替補</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product-item col-12 col-md-4">
+                    <img src="./image/product02.jpg" alt="">
+
+                    <div style="display: none;" id="web-view2">
+                        <div class="product-item-view d-flex">
+                            <img src="./image/view02.jpg" alt="">
+                            <div class="product-item-detail">
+                                <h2>五人蔬菜箱</h2>
+                                <h5 class="pt-2">葉菜類6入/根莖類7入/菇類5入/辛香料2入</h5>
+                                <p class="pt-2"><i class="fas fa-hashtag"></i> 青菜類：青江菜、大陸妹、小白菜、油菜、空心菜、高麗菜</p>
+                                <p><i class="fas fa-hashtag"></i> 根莖類：洋蔥、紅蘿蔔、番茄、玉米、大黃瓜、白蘿蔔、馬鈴薯</p>
+                                <p><i class="fas fa-hashtag"></i> 菇類：金針菇、小木耳、杏鮑菇、鴻禧菇、美白菇</p>
+                                <p><i class="fas fa-hashtag"></i> 因皆為每日新鮮採購，若品項有缺貨會選其他當季蔬菜替補</p>
+                                <p><i class="fas fa-dollar-sign"></i> 優惠價：NT$899</p>
+                                <button class="btn-view-cart btn">加入購物車</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quickview d-none d-md-block" id="web-view-btn2">
+                        <a href="#0">快速瀏覽</a>
+                    </div>
+
+                    <div class="product-price pt-3">
+                        <h5>五人蔬菜箱</h5>
+                        <p>NT$899</p>
+                    </div>
+                    <div class="product-btn-cart d-flex justify-content-around">
+                        <button class="btn-mobile-view btn col-5 d-md-none" id="mobile-view-btn2">商品細節</button>
+                        <button class="btn-cart btn col-5 col-md-12">加入購物車</button>
+                    </div>
+
+                    <div style="display: none;" id="view-mobile-2">
+                        <div class="product-item-view d-flex">
+                            <div class="product-item-detail">
+                                <h5 class="pt-2">葉菜類6入/根莖類7入/菇類5入/辛香料2入</h5>
+                                <p class="pt-2"><i class="fas fa-hashtag"></i> 青菜類：青江菜、大陸妹、小白菜、油菜、空心菜、高麗菜</p>
+                                <p><i class="fas fa-hashtag"></i> 根莖類：洋蔥、紅蘿蔔、番茄、玉米、大黃瓜、白蘿蔔、馬鈴薯</p>
+                                <p><i class="fas fa-hashtag"></i> 菇類：金針菇、小木耳、杏鮑菇、鴻禧菇、美白菇</p>
+                                <p><i class="fas fa-hashtag"></i> 因皆為每日新鮮採購，若品項有缺貨會選其他當季蔬菜替補</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product-item col-12 col-md-4">
+                    <img src="./image/product03.jpg" alt="">
+
+                    <div style="display: none;" id="web-view3">
+                        <div class="product-item-view d-flex">
+                            <img src="./image/view03.jpg" alt="">
+                            <div class="product-item-detail">
+                                <h2>一週水果箱</h2>
+                                <h5 class="pt-2">精選4-5種水果</h5>
+                                <p class="pt-2"><i class="fas fa-hashtag"></i> 滿足一至兩人一週需攝取的水果份量</p>
+                                <p><i class="fas fa-hashtag"></i> 水果箱內容為隨機出貨</p>
+                                <p><i class="fas fa-hashtag"></i> 可隨季節品嚐到當令果物的香甜好滋味</p>
+                                <p><i class="fas fa-hashtag"></i> 因皆為每日新鮮採購，若品項有缺貨會選其他當季水果替補</p>
+                                <p><i class="fas fa-dollar-sign"></i> 優惠價：NT$599</p>
+                                <button class="btn-view-cart btn">加入購物車</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quickview d-none d-md-block" id="web-view-btn3">
+                        <a href="#0">快速瀏覽</a>
+                    </div>
+
+                    <div class="product-price pt-3">
+                        <h5>一週水果箱</h5>
+                        <p>NT$599</p>
+                    </div>
+                    <div class="product-btn-cart d-flex justify-content-around">
+                        <button class="btn-mobile-view btn col-5 d-md-none" id="mobile-view-btn3">商品細節</button>
+                        <button class="btn-cart btn col-5 col-md-12">加入購物車</button>
+                    </div>
+
+                    <div style="display: none;" id="view-mobile-3">
+                        <div class="product-item-view d-flex">
+                            <div class="product-item-detail">
+                                <h5 class="pt-2">精選4-5種水果</h5>
+                                <p class="pt-2"><i class="fas fa-hashtag"></i> 滿足一至兩人一週需攝取的水果份量</p>
+                                <p><i class="fas fa-hashtag"></i> 水果箱內容為隨機出貨</p>
+                                <p><i class="fas fa-hashtag"></i> 可隨季節品嚐到當令果物的香甜好滋味</p>
+                                <p><i class="fas fa-hashtag"></i> 因皆為每日新鮮採購，若品項有缺貨會選其他當季水果替補</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="discount d-flex">
+        <div class="discount-text d-flex flex-column justify-content-center align-items-center">
+            <h1>首次訂購可享</h1>
+            <h1 class="discount-text-number">$100</h1>
+            <h1>折扣優惠</h1>
+        </div>
+        <div class="discount-img"></div>
+    </div>
+
+    <div class="seasonal pt-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="seasonal-title col-md-12">
+                    <h2 class="font-weight-bold">當季蔬果</h2>
+                </div>
+
+                <div class="seasonal-flip">
+                    <div class="front">
+                        <img src="./image/icon-avocado.png" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="./image/seasoanl-avocado.jpg" alt="">
+                    </div>
+                </div>
+                <div class="seasonal-flip">
+                    <div class="front">
+                        <img src="./image/icon-carrot.png" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="./image/seasoanl-carrot.jpg" alt="">
+                    </div>
+                </div>
+                <div class="seasonal-flip">
+                    <div class="front">
+                        <img src="./image/icon-mushroom.png" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="./image/seasoanl-mushroom.jpg" alt="">
+                    </div>
+                </div>
+                <div class="seasonal-flip">
+                    <div class="front">
+                        <img src="./image/icon-onion.png" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="./image/seasoanl-onion.jpg" alt="">
+                    </div>
+                </div>
+                <div class="seasonal-flip">
+                    <div class="front">
+                        <img src="./image/icon-potato.png" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="./image/seasoanl-potato.jpg" alt="">
+                    </div>
+                </div>
+                <div class="seasonal-flip">
+                    <div class="front">
+                        <img src="./image/icon-tomato.png" alt="">
+                    </div>
+                    <div class="back">
+                        <img src="./image/seasoanl-tomato.jpg" alt="">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="delicious pt-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="delicious-title col-md-12">
+                    <h2 class="font-weight-bold">更多美味</h2>
+                </div>
+
+                <div class="slick">
+                    <div class="slick-img">
+                        <img src="./image/delicious01.JPG" alt="">
+                    </div>
+                    <div class="slick-img">
+                        <img src="./image/delicious02.JPG" alt="">
+                    </div>
+                    <div class="slick-img">
+                        <img src="./image/delicious03.jpeg" alt="">
+                    </div>
+                    <div class="slick-img">
+                        <img src="./image/delicious04.jpeg" alt="">
+                    </div>
+                    <div class="slick-img">
+                        <img src="./image/delicious05.jpeg" alt="">
+                    </div>
+                    <div class="slick-img">
+                        <img src="./image/delicious06.JPG" alt="">
+                    </div>
+                    <div class="slick-img">
+                        <img src="./image/delicious07.jpeg" alt="">
+                    </div>
+                    <div class="slick-img">
+                        <img src="./image/delicious08.jpeg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+            <div class="row flex-column justify-content-center align-items-center">
+                <p class="pt-4">地址/106台北市大安區復興南路一段390號</p>
+                <p>電話/02 6631 6666</p>
+                <p>客服信箱/service@goodfarm.com</p>
+                <div class="contact-socialmedia">
+                    <a class="pr-2" href=""><i class="fab fa-facebook-square"></i></a>
+                    <a class="pr-2" href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href=""><i class="fab fa-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        <p>© Copyrights 2021 GOODFRAM. All rights reserved.</p>
+    </footer>
+
+    <div id="counter">
+        <span class="count">0</span>
+    </div>
+    <div id="cart">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    <div id="gotop">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"
+        integrity="sha512-fFCuqqfp+PTJ7OYFJVOsADHPgRz7VLaPc9uex6jEt6GbIanpRvoujyb+uwCTTk+FGBJkvvlsDLqccZABYha3IQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        $('.btn-shop-web').click(function () {
+            $('html,body').animate({
+                scrollTop: 1900
+            }, 1000);
+        });
+
+        $('.btn-shop-mobile').click(function () {
+            $('html,body').animate({
+                scrollTop: 2300
+            }, 1000);
+        });
+
+        $('#web-view-btn1').on('click', function () {
+            $.fancybox.open({
+                src: '#web-view1',
+                type: 'inline',
+                opts: {
+                    afterShow: function (instance, current) {
+                        console.info('done!');
+                    }
+                }
+            });
+        });
+        $('#web-view-btn2').on('click', function () {
+            $.fancybox.open({
+                src: '#web-view2',
+                type: 'inline',
+                opts: {
+                    afterShow: function (instance, current) {
+                        console.info('done!');
+                    }
+                }
+            });
+        });
+        $('#web-view-btn3').on('click', function () {
+            $.fancybox.open({
+                src: '#web-view3',
+                type: 'inline',
+                opts: {
+                    afterShow: function (instance, current) {
+                        console.info('done!');
+                    }
+                }
+            });
+        });
+
+        $('#mobile-view-btn1').on('click', function () {
+            $.fancybox.open({
+                src: '#view-mobile-1',
+                type: 'inline',
+                opts: {
+                    afterShow: function (instance, current) {
+                        console.info('done!');
+                    }
+                }
+            });
+        });
+
+        $('#mobile-view-btn2').on('click', function () {
+            $.fancybox.open({
+                src: '#view-mobile-2',
+                type: 'inline',
+                opts: {
+                    afterShow: function (instance, current) {
+                        console.info('done!');
+                    }
+                }
+            });
+        });
+
+        $('#mobile-view-btn3').on('click', function () {
+            $.fancybox.open({
+                src: '#view-mobile-3',
+                type: 'inline',
+                opts: {
+                    afterShow: function (instance, current) {
+                        console.info('done!');
+                    }
+                }
+            });
+        });
+
+
+
+        $(function () {
+            $('#gotop').click(function () {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1300) {
+                    $('#gotop').fadeIn('fast');
+                } else {
+                    $('#gotop').stop().fadeOut('fast');
+                }
+            });
+        });
+
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1300) {
+                    $('#cart').fadeIn('fast');
+                } else {
+                    $('#cart').stop().fadeOut('fast');
+                }
+            });
+        })
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 1300) {
+                    $('#counter').fadeIn('fast');
+                } else {
+                    $('#counter').stop().fadeOut('fast');
+                }
+            });
+        })
+
+        $('.btn-cart').click(function () {
+            $('.count').html(function (i, val) { return val * 1 + 1 });
+        });
+        $('.btn-view-cart').click(function () {
+            $('.count').html(function (i, val) { return val * 1 + 1 });
+        });
+
+        $('.slick').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+        });
+
+
+        $(".seasonal-flip ").flip();
+
+    </script>
+
+</body>
+
+</html>
