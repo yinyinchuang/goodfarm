@@ -63,7 +63,7 @@
     </div>
 
     <!-- how -->
-    <div class="howitworks pt-5">
+    <div class="howitworks">
         <div class="container">
             <div class="row justify-content-center align-items-center text-center">
                 <div class="howitworks-title col-md-12">
@@ -90,7 +90,7 @@
     </div>
 
     <!-- product -->
-    <div class="product pt-5">
+    <div class="product" id="product">
         <div class="container">
             <div class="row justify-content-center align-items-center text-center">
                 <div class="product-title col-md-12">
@@ -395,16 +395,28 @@
 
     <script>
 
+        // $('.btn-shop-web').click(function () {
+        //     $('html,body').animate({
+        //         scrollTop: 2200
+        //     }, 1000);
+        // });
+
         $('.btn-shop-web').click(function () {
-            $('html,body').animate({
-                scrollTop: 1900
-            }, 1000);
-        });
+                $('html, body').animate({
+                    scrollTop: $("#product").offset().top
+                }, 1500);
+            });
+
+        // $('.btn-shop-mobile').click(function () {
+        //     $('html,body').animate({
+        //         scrollTop: 2500
+        //     }, 1000);
+        // });
 
         $('.btn-shop-mobile').click(function () {
-            $('html,body').animate({
-                scrollTop: 2300
-            }, 1000);
+            $('html, body').animate({
+                scrollTop: $("#product").offset().top
+            }, 1500);
         });
 
         $('#web-view-btn1').on('click', function () {
