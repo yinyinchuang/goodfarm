@@ -1,24 +1,5 @@
-
-
-@font-face {
-    font-family: '源泉圓體';
-    src: url(./font/GenSenRounded-B.ttc) format('truetype');
-    font-weight: 700;
-}
-@font-face {
-    font-family: '源泉圓體';
-    src: url(./font/GenSenRounded-R.ttc) format('truetype');
-    font-weight: 400;
-}
-@font-face {
-    font-family: '源泉圓體';
-    src: url(./font/GenSenRounded-L.ttc) format('truetype');
-    font-weight: 300;
-}
-
-
 body {
-    font-family: '源泉圓體';
+    font-family: 'Noto Sans TC', sans-serif;
     color: #1A1A1A;
 }
 
