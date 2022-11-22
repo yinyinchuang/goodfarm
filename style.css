@@ -22,6 +22,10 @@ body {
     color: #1A1A1A;
 }
 
+h2 {
+    color: #0b5345;
+}
+
 @media screen and (max-width:767px) {
    
     .h1 {
@@ -82,7 +86,7 @@ body {
     font-size: 20px;
     line-height: 40px;
     text-align: center;
-    color: white;
+    color: #FDFEFE;
     cursor: pointer;
     z-index: 2;
 }
@@ -100,18 +104,18 @@ body {
     font-size: 10px;
     line-height: 20px;
     text-align: center;
-    color: white;
+    color: #FDFEFE;
     cursor: pointer;
     z-index: 3;
 }
 
 /* ---------------------herosection--------------------- */
 .herosection {
-    height: 768px;
+    height: 100vh;
     background-image: url("./image/hero03.jpg");
     background-size: cover;
     background-attachment: fixed;
-    color: #e5dfdc;
+    color: #f18f01;
 }
 
 .herosection .container {
@@ -143,11 +147,9 @@ body {
 /* ---------------------aboutus--------------------- */
 .aboutus {
     width: 100%;
-    height: 600px;
-    /* background-color: #DC7633; */
+    height: 100%;
     background-color: #E5DFDC;
-    padding-top: 100px;
-    /* color: #FDFEFE; */
+    padding: 100px 0;
 }
 
 .aboutus-text {
@@ -180,6 +182,7 @@ body {
 .howitworks {
     width: 100%;
     height: 500px;
+    /* height: 100vh; */
     background-color: #FDFEFE;
 }
 
@@ -365,6 +368,7 @@ body {
     width: 120px;
     height: 120px;
     margin: 0 20px;
+    cursor: pointer;
 }
 
 .front {
